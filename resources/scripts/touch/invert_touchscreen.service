@@ -1,0 +1,14 @@
+[Unit]
+Description=Invert Goodix Touchscreen XY Mapping
+After=graphical.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/bin/touch_cal.sh
+Restart=on-failure
+# User=$USER
+# Environment=DISPLAY=:0
+# Environment=XAUTHORITY=/home/$USER/.Xauthority
+
+[Install]
+WantedBy=multi-user.target

@@ -61,7 +61,7 @@ sudo echo "gpu_mem=256" | sudo tee -a /boot/config.txt
 bash ${cur_dir}/LK-Dispense/scripts/clear_desktop.sh
 bash ${cur_dir}/LK-Dispense/scripts/install_splash.sh
 bash ${cur_dir}/LK-Dispense/scripts/start.sh
-bash ${cur_dir}/LK-Dispense/scripts/setup_touch.sh
+bash ${cur_dir}/LK-Dispense/scripts/setup_touch_v2.sh
 
 # Allow port 80 to pi
 # don't know use of it, so disabling it for now as well. 

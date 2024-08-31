@@ -12,6 +12,9 @@ sudo chmod +x /usr/local/bin/touch_cal.sh
 # Copy the invert_touchscreen.service from the repo to /etc/systemd/system/
 sudo cp ${cur_dir}/../scripts/touch/invert_touchscreen.service /etc/systemd/system/invert_touchscreen.service
 
+# Reload systemd to recognize the new service
+sudo systemctl daemon-reload
+
 # Enable and start the service
 sudo systemctl enable invert_touchscreen
 sudo systemctl start invert_touchscreen

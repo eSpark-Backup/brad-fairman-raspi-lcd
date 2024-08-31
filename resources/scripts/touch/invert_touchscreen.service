@@ -6,9 +6,6 @@ After=graphical.target
 Type=forking
 ExecStart=/usr/local/bin/touch_cal.sh
 Restart=on-failure
-# User=$USER
-# Environment=DISPLAY=:0
-# Environment=XAUTHORITY=/home/$USER/.Xauthority
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
